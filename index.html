@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOP WATCH</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<style>
+body{
+    margin-top: 220px;
+    margin-bottom: 90px;
+    text-align: center;
+    
+   background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 1300px;
+    border-radius: 20px, 20px, 20px ,20px;
+    font-family: initial;
+    box-shadow: inset 0 0 50px ;
+    border-radius: 50px;
+}
+
+h1{
+    color: rgb(158, 132, 132);
+    display: inline-block;
+    width: 200px;
+    background-color: white;
+    border-radius: 16px 15px 15px 15px;
+}
+
+h1:hover{
+    color: #000;
+    background-color: wheat;
+}
+
+.i:hover{
+    color: white;
+    background-color: grey;
+}
+
+
+    h1.own {border-style: dotted;
+    color: red;
+    box-shadow: inset 0 0 10px ;
+    border-radius: 50px;}
+    h1.two {border-style: dotted;
+    color: red;
+    box-shadow: inset 0 0 10px ;
+    border-radius: 50px;}
+    h1.three {border-style: dotted;
+    color: red;
+    box-shadow: inset 0 0 10px ;
+    border-radius: 50px;}
+    h1.four {border-style: dotted;
+    color: red;
+    box-shadow: inset 0 0 10px ;
+    border-radius: 50px;}
+    h1.five {border-style: dotted;
+    color: red;
+    box-shadow: inset 0 0 10px ;
+    border-radius: 50px;}
+    h1.y {border-style: dotted;
+    color: blue;
+    box-shadow: inset 0 0 10px ;
+    border-radius: 50px;}
+    h1.r {border-style: dotted;
+    color: blue;
+    box-shadow: inset 0 0 10px ;
+    border-radius: 50px;}
+    h1.n {border-style: dotted;
+    color: blue;
+    box-shadow: inset 0 0 10px ;
+    border-radius: 50px;}
+    h1.c {border-style: dotted;
+    color: blue;
+    box-shadow: inset 0 0 10px ;
+    border-radius: 50px;}
+    h1.a {border-style: dotted;
+    color: blue;
+    box-shadow: inset 0 0 10px ;
+    border-radius: 50px;}
+    h1.stopwatch {border-style:double;
+    width: 280px;
+    box-shadow: inset 0 0 10px ;
+    border-radius: 50px;
+    color:green;}
+    h1.timer {border-style:dashed;
+    width: 260px;
+    box-shadow: inset 0 0 10px ;
+    border-radius: 50px;
+    color:blueviolet}
+
+    #listlap{
+        text-decoration: underline;
+        text-decoration: overline;
+        cursor:help;
+        word-spacing: 100px;
+        letter-spacing: 20px;
+        background-color: black;
+        color: white;
+        border-style: double;
+        border-radius: 15px 15px 15px 15px ;
+        margin: 50px;
+    }
+
+#listlap:hover{
+    color: black;
+    background-color: white;
+    
+}
+
+
+</style>
+</head>
+<body>
+
+    <br>
+    <br>
+    <br>
+    
+
+    
+    <div class="main">
+        <div>
+            <img width="200px" src="https://cdn.osxdaily.com/wp-content/uploads/2018/03/stopwatch-iphone.jpg" alt="Stop Watch">
+        </div>
+        
+        <br>    
+    <div>
+        <h1 class="stopwatch" >Stop Watch</h1>
+    </div>
+    <br>
+    <div>
+        <h1 class="timer">"Timer"</h1>
+    </div>
+    <br>
+    <div>
+        <h1 class="y">Day</h1>
+        <h1 class="r">Hour</h1>
+        <h1 class="n">Min</h1>
+        <h1 class="c">Sec</h1>
+        <h1 class="a">MSec</h1>
+    </div>
+    <br>
+    <div>
+        <h1 class="own" id="day">0</h1>
+        <h1 class="two" id="hour">0</h1>
+        <h1 class="three" id="min">0</h1>
+        <h1 class="four" id="sec">0</h1>
+        <h1 class="five" id="msec">0</h1>
+    </div>
+    <br>
+    
+    <div>
+        <button  id="xyz" type="button" class="btn btn-outline-info" onclick="active()">Active</button>
+        <button type="button" class="btn btn-outline-warning" onclick="pause()">Pause</button>
+        <button type="button" class="btn btn-outline-danger" onclick="reset()">Reset</button>
+        <button type="button" class="btn btn-outline-success" onclick="listlaps()">Lab</button>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+      
+
+        
+
+<h1 class="i">History</h1>
+
+    </div>
+
+</div>
+
+    <div>
+
+    <ul id="listlap"><br></ul>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    
+
+
+</body>
+<script src="app.js"></script>
+</html>
